@@ -145,8 +145,9 @@
 
 //Hamburgare
 .menu-hamburgare {
+//    text-align: right;
     .c-hamburger {
-        display: block;
+        display: inline-block;
         position: relative;
         overflow: hidden;
         margin: 0;

@@ -6,58 +6,60 @@
     <header role="banner" class="l-header">
 
         <!--.l-header-region -->
+       
         <section class="l-header-region row">
-            <div class="columns small-10 show-for-small-only">
-                <div class="mobile-logo-wrapper">
+            
+            <div class="l-header-inner-1 logo-wrapper">
                     <?php if ($linked_logo): print $linked_logo; endif; ?>
                 </div>
-            </div>
             
-            <div class="columns small-2">
+            
+            
+            <div class="l-header-inner-2">
+                <div class="language-block show-for-medium-up">
+                    <?php 
+                        global $language;
+                        $current_lang = $language->language;
+                        global $base_url;
+                        global $active_sv;
+                        global $active_de;
+                        global $active_ca;
+                        global $active_es;
+                        global $active_en;
+
+                        if ( $current_lang =="sv") {
+                          $active_sv = "active";
+                        }elseif ($current_lang =="en") {
+                          $active_en = "active";
+                        }elseif ($current_lang =="de") {
+                          $active_de= "active";
+                        }elseif ($current_lang =="ca") {
+                          $active_ca = "active";
+                        }elseif($current_lang =="es"){
+                          $active_es = "active";
+                        }
+
+                     ?>
+                    <ul class="language-switch ">
+                        <li><a class="lan-item se <?php print $active_sv; ?>" href="/sv"><img src="/sites/all/themes/virtuedata/css/images/se.png"></a></li>
+                        <li><a class="lan-item en <?php print $active_en; ?>" href="/"><img src="/sites/all/themes/virtuedata/css/images/en.png"></a></li>
+                        <li><a class="lan-item ca <?php print $active_ca; ?>" href="/ca"><img src="/sites/all/themes/virtuedata/css/images/ca.png"></a></li>
+                        <li><a class="lan-item es <?php print $active_es; ?>" href="/es"><img src="/sites/all/themes/virtuedata/css/images/es.png"></a></li>
+                        <li><a class="lan-item de <?php print $active_de; ?>" href="/de"><img src="/sites/all/themes/virtuedata/css/images/de.png"></a></li>
+                    </ul>
+                </div>
+
                 <div class="menu-hamburgare">
                     <div class="c-hamburger c-hamburger--htx">
                         <a href="#"><span></span></a>
                     </div>
                 </div>
             </div>
-            
-            <div class="columns small-10 show-for-medium-up">
-                <?php 
-                    global $language;
-                    $current_lang = $language->language;
-                    global $base_url;
-                    global $active_sv;
-                    global $active_de;
-                    global $active_ca;
-                    global $active_es;
-                    global $active_en;
-
-                    if ( $current_lang =="sv") {
-                      $active_sv = "active";
-                    }elseif ($current_lang =="en") {
-                      $active_en = "active";
-                    }elseif ($current_lang =="de") {
-                      $active_de= "active";
-                    }elseif ($current_lang =="ca") {
-                      $active_ca = "active";
-                    }elseif($current_lang =="es"){
-                      $active_es = "active";
-                    }
-
-                 ?>
-                <ul class="language-switch ">
-                    <li><a class="lan-item se <?php print $active_sv; ?>" href="/sv"><img src="/sites/all/themes/virtuedata/css/images/se.png"></a></li>
-                    <li><a class="lan-item en <?php print $active_en; ?>" href="/"><img src="/sites/all/themes/virtuedata/css/images/en.png"></a></li>
-                    <li><a class="lan-item ca <?php print $active_ca; ?>" href="/ca"><img src="/sites/all/themes/virtuedata/css/images/ca.png"></a></li>
-                    <li><a class="lan-item es <?php print $active_es; ?>" href="/es"><img src="/sites/all/themes/virtuedata/css/images/es.png"></a></li>
-                    <li><a class="lan-item de <?php print $active_de; ?>" href="/de"><img src="/sites/all/themes/virtuedata/css/images/de.png"></a></li>
-                </ul>
-            </div>
         </section>
 
         <div id="mobil-navigation" class="mobil-nav">
-            <div id="main-navigation-content" class="row">
-                <div class="columns small-12 medium-6 medium-centered">
+            <div id="main-navigation-content" class="xrow">
+                <div class="xcolumns xsmall-12 xmedium-6 medium-centered">
                     <ul class="language-switch show-for-small-only">
                         <li><a class="lan-item se <?php print $active_sv; ?>" href="/sv"><img src="/sites/all/themes/virtuedata/css/images/se.png"></a></li>
                         <li><a class="lan-item en <?php print $active_en; ?>" href="/"><img src="/sites/all/themes/virtuedata/css/images/en.png"></a></li>
@@ -76,17 +78,19 @@
         <!-- Title, slogan and menu -->
 
         <section class="b-header-wrapper <?php print $alt_header_classes; ?>">
-            <div class="b-header row">
+<!--            <div class="b-header row">-->
+<!--
                 <div class="columns logga show-for-medium-up medium-4 large-4">
-                    <?php if ($linked_logo): print $linked_logo; endif; ?>
+                    <?php //if ($linked_logo): print $linked_logo; endif; ?>
                 </div>
+-->
                 <div class="columns sponsorloggor small-6 medium-4 large-4">
                     <?php print render($page['sponsorloggor-1']); ?>
                 </div>
                 <div class="columns sponsorloggor small-6 medium-4 large-4">
                     <?php print render($page['sponsorloggor-2']); ?>
                 </div>
-            </div>
+<!--            </div>-->
 
 
             <nav id="main-menu" class="navigation show-for-medium-up row" role="navigation">

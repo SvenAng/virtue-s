@@ -59,16 +59,31 @@ h2.block-title {
 // ========================== header ========================
 
 .l-header-region {
-    border-bottom: $horiz-line-color 1px solid;
+//    width: $row-width;
+//    margin: 0 auto;
+//    border-bottom: $horiz-line-color 1px solid;
     padding: $column-gutter/2 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-wrapper {
 
-    .mobile-logo-wrapper {
-
-        //        text-align: right;
         img {
-            max-height: 50px;
+            max-height: 70px;
 
         }
+    }
+    .language-block{
+        padding-right: $column-gutter;
+    }
+    .l-header-inner-1{
+        padding-left: $column-gutter/2;
+    }
+    .l-header-inner-2{
+        padding-right: $column-gutter/2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     ul {
@@ -121,6 +136,10 @@ h2.block-title {
     }
 }
 
+.l-header-region.row::after, .l-header-region.row::before{
+    content: inherit;
+}
+
 .b-header-wrapper {
     padding-bottom: $column-gutter/1.5;
 
@@ -157,7 +176,39 @@ h2.block-title {
     }
 
 }
-
+.l-triptych{
+    border-top: $iron 1px solid;
+    padding-top: $column-gutter/1.5;
+    padding-bottom: $column-gutter/1.5;
+    section{
+        padding: 0 $column-gutter;
+        height: 100px;
+        p{
+            img{
+              width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .triptych-middle, .triptych-last{
+        section{
+            border-left: $iron 1px solid;
+        }
+    }
+    @media #{$small-only} {
+        .triptych-first, .triptych-middle, .triptych-last{
+            section{
+                padding: 0 $column-gutter/5;
+                border: none;
+                height: inherit;
+            }
+        }
+    }
+    
+}
+.l-triptych:first-child{
+    border: none;    
+}
 //================================
 //============ Main menu
 #main-menu {
@@ -324,10 +375,14 @@ h2.block-title {
             list-style: none;
             border-bottom: dashed 1px $iron;
             padding-bottom: $column-gutter/2;
-
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
             li {
-                display: inline-table;
-
+//                display: inline-table;
+                flex-grow: 1;
+//                width: 240px;
+//                white-space: nowrap;
                 //
                 a {
                     padding: 0 $column-gutter/2;
@@ -379,6 +434,13 @@ h2.block-title {
 
             li.add-place a:hover {
                 color: $virtue-button-place-color;
+            }
+        }
+        @media #{$small-only} {
+            ul.menu{
+                border-top: dashed 1px $iron;
+                padding-top: $column-gutter/2;
+                display: block;
             }
         }
     }
@@ -704,9 +766,9 @@ h2.block-title {
 }
 
 .bottom-row-1 {
-    background: $gainsboro;
-    width: 100%;
-    padding: $column-gutter 0;
+//    background: $gainsboro;
+//    width: 100%;
+//    padding: $column-gutter 0;
 }
 
 .bottom-row-1 {
@@ -750,7 +812,7 @@ h2.block-title {
 }
 .bottom-row-2 {
     padding: $column-gutter 0;
-    background: $monsoon;
+//    background: $monsoon;
     h2.block-title,  {
         color: #fff;
     }
