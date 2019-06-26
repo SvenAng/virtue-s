@@ -21,7 +21,9 @@ main,
     //  background: $white;
 
 }
-
+a:hover{
+    transition: color 0.2s ease-in-out;
+}
 //
 
 //scroll
@@ -59,10 +61,14 @@ h2.block-title {
 // ========================== header ========================
 
 .l-header-region {
-//    width: $row-width;
-//    margin: 0 auto;
+    width: $row-width;
+    margin: 0 auto;
 //    border-bottom: $horiz-line-color 1px solid;
     padding: $column-gutter/2 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -932,6 +938,23 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
                     font-weight: 400;
                 }
             }
+        }
+    }
+}
+
+.search-view{
+    a{
+        color: $body-font-color;
+        
+    }
+   
+    .views-row{
+        margin: $column-gutter 0;
+    }
+    .views-row:hover{
+        a{
+            color: $primary-color; 
+//            transition: color 0.2s ease-in-out;
         }
     }
 }

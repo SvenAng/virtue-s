@@ -6596,6 +6596,10 @@ body {
   background: #FFFFFF;
 }
 
+a:hover {
+  transition: color 0.2s ease-in-out;
+}
+
 .scroll-top {
   background-color: #ff8519;
   border-radius: 4px;
@@ -6626,7 +6630,13 @@ h2.block-title {
 }
 
 .l-header-region {
+  width: 68.75rem;
+  margin: 0 auto;
   padding: 0.9375rem 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7271,6 +7281,16 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
 .view-rapporter-via-observationer .view-content > .view-grouping .view-grouping-content h3 a {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.search-view a {
+  color: #222222;
+}
+.search-view .views-row {
+  margin: 1.875rem 0;
+}
+.search-view .views-row:hover a {
+  color: #ff8519;
 }
 
 /*# sourceMappingURL=virtuedata.css.map */

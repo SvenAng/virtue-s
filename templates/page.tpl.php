@@ -7,7 +7,7 @@
 
         <!--.l-header-region -->
        
-        <section class="l-header-region row">
+        <section class="l-header-region">
             
             <div class="l-header-inner-1 logo-wrapper">
                     <?php if ($linked_logo): print $linked_logo; endif; ?>
@@ -58,7 +58,7 @@
         </section>
 
         <div id="mobil-navigation" class="mobil-nav">
-            <div id="main-navigation-content" class="xrow">
+            <div id="main-navigation-content" class="row">
                 <div class="xcolumns xsmall-12 xmedium-6 medium-centered">
                     <ul class="language-switch show-for-small-only">
                         <li><a class="lan-item se <?php print $active_sv; ?>" href="/sv"><img src="/sites/all/themes/virtuedata/css/images/se.png"></a></li>
