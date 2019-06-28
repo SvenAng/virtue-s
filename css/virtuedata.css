@@ -6630,7 +6630,7 @@ h2.block-title {
 }
 
 .l-header-region {
-  width: 68.75rem;
+  max-width: 68.75rem;
   margin: 0 auto;
   padding: 0.9375rem 0;
   display: -webkit-box;
@@ -6655,6 +6655,11 @@ h2.block-title {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+.l-header-region .fa-search {
+  padding: 0 1.875rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 .l-header-region ul {
   list-style-type: none;
@@ -6685,6 +6690,20 @@ h2.block-title {
 
 .l-header-region.row::after, .l-header-region.row::before {
   content: inherit;
+}
+
+.searchblock {
+  display: none;
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.searchblock .views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0;
+}
+
+.page-search .searchblock {
+  display: block;
 }
 
 .b-header-wrapper {

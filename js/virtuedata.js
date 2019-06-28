@@ -57,6 +57,10 @@ jQuery(document).ready(function () {
         //console.log(interval);
     }, 1000);
     
+    jQuery(".fa-search").click(function () {
+        jQuery('.searchblock').slideToggle();
+    });
+    
 //    jQuery('button#edit-field-fynd-und-actions-ief-add').text('+');
     
 

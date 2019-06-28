@@ -48,7 +48,7 @@
                         <li><a class="lan-item de <?php print $active_de; ?>" href="/de"><img src="/sites/all/themes/virtuedata/css/images/de.png"></a></li>
                     </ul>
                 </div>
-
+                <i class="fas fa-search"></i>
                 <div class="menu-hamburgare">
                     <div class="c-hamburger c-hamburger--htx">
                         <a href="#"><span></span></a>
@@ -67,6 +67,7 @@
                         <li><a class="lan-item es <?php print $active_es; ?>" href="/es"><img src="/sites/all/themes/virtuedata/css/images/es.png"></a></li>
                         <li><a class="lan-item de <?php print $active_de; ?>" href="/de"><img src="/sites/all/themes/virtuedata/css/images/de.png"></a></li>
                     </ul>
+                    
                     <?php print render($page['main_menu_mobil']); ?>
                 </div>
             </div>
@@ -78,27 +79,25 @@
         <!-- Title, slogan and menu -->
 
         <section class="b-header-wrapper <?php print $alt_header_classes; ?>">
-<!--            <div class="b-header row">-->
-<!--
-                <div class="columns logga show-for-medium-up medium-4 large-4">
-                    <?php //if ($linked_logo): print $linked_logo; endif; ?>
-                </div>
--->
+
                 <div class="columns sponsorloggor small-6 medium-4 large-4">
                     <?php print render($page['sponsorloggor-1']); ?>
                 </div>
                 <div class="columns sponsorloggor small-6 medium-4 large-4">
                     <?php print render($page['sponsorloggor-2']); ?>
                 </div>
-<!--            </div>-->
+
 
 
             <nav id="main-menu" class="navigation show-for-medium-up row" role="navigation">
                 
                 <?php print render($page['main_menu']); ?>
-            </nav> <!-- /#main-menu -->
+            </nav>
 
 
+        </section>
+        <section class="searchblock">
+            <?php print render($page['search_block']); ?>
         </section>
 
         <!-- End title, slogan and menu -->

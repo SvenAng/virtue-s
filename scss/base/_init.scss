@@ -61,7 +61,9 @@ h2.block-title {
 // ========================== header ========================
 
 .l-header-region {
-    width: $row-width;
+//    width: $row-width;
+//    width: 100%; 
+    max-width: $row-width;
     margin: 0 auto;
 //    border-bottom: $horiz-line-color 1px solid;
     padding: $column-gutter/2 0;
@@ -91,7 +93,12 @@ h2.block-title {
         justify-content: flex-end;
         align-items: center;
     }
-
+    .fa-search{
+        padding: 0 $column-gutter;
+        font-size: 1.5rem;
+        cursor: pointer;
+//        pointer-events: auto;
+    }
     ul {
         list-style-type: none;
         margin: 0;
@@ -145,7 +152,20 @@ h2.block-title {
 .l-header-region.row::after, .l-header-region.row::before{
     content: inherit;
 }
-
+.searchblock{
+    display: none;
+    max-width: $row-width;
+    margin: 0 auto;
+    padding: 0 $column-gutter/2;
+    .views-exposed-form .views-exposed-widget .form-submit{
+        margin-top: 0;
+    }
+}
+.page-search{
+    .searchblock{
+        display: block;
+    }
+}
 .b-header-wrapper {
     padding-bottom: $column-gutter/1.5;
 
