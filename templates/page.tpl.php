@@ -26,17 +26,28 @@
                         global $active_ca;
                         global $active_es;
                         global $active_en;
-
-                        if ( $current_lang =="sv") {
-                          $active_sv = "active";
+                    global $sitemap;
+                    global $sitemap_link;
+                    if ( $current_lang =="sv") {
+                            $active_sv = "active";
+                            $sitemap_link ="sv/svenskt-innehall";
+                            $sitemap = "Sitemap";
                         }elseif ($current_lang =="en") {
-                          $active_en = "active";
+                            $active_en = "active";
+                            $sitemap_link ="/english-content";
+                            $sitemap = "Sitemap";
                         }elseif ($current_lang =="de") {
-                          $active_de= "active";
+                            $active_de = "active";
+                            $sitemap_link ="/de/deutscher-inhalt";
+                            $sitemap = "Sitemap";
                         }elseif ($current_lang =="ca") {
-                          $active_ca = "active";
+                            $active_ca = "active";
+                            $sitemap_link ="/ca/contingut-en-catala";
+                            $sitemap = "Sitemap";
                         }elseif($current_lang =="es"){
-                          $active_es = "active";
+                            $active_es = "active";
+                            $sitemap_link ="es/contenidoen-espanol";
+                            $sitemap = "Sitemap";
                         }
 
                      ?>
@@ -46,6 +57,9 @@
                         <li><a class="lan-item ca <?php print $active_ca; ?>" href="/ca"><img src="/sites/all/themes/virtuedata/css/images/ca.png"></a></li>
                         <li><a class="lan-item es <?php print $active_es; ?>" href="/es"><img src="/sites/all/themes/virtuedata/css/images/es.png"></a></li>
                         <li><a class="lan-item de <?php print $active_de; ?>" href="/de"><img src="/sites/all/themes/virtuedata/css/images/de.png"></a></li>
+                        <li>
+                            <a href="<?php print $sitemap_link; ?>"><?php print $sitemap; ?></a>
+                        </li>
                     </ul>
                 </div>
                 <i class="fas fa-search"></i>

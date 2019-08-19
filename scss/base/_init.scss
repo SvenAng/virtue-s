@@ -82,7 +82,7 @@ h2.block-title {
         }
     }
     .language-block{
-        padding-right: $column-gutter;
+//        padding-right: $column-gutter;
     }
     .l-header-inner-1{
         padding-left: $column-gutter/2;
@@ -94,7 +94,7 @@ h2.block-title {
         align-items: center;
     }
     .fa-search{
-        padding: 0 $column-gutter;
+        padding: 0 $column-gutter 0 $column-gutter/3 ;
         font-size: 1.5rem;
         cursor: pointer;
 //        pointer-events: auto;
@@ -531,11 +531,14 @@ h2.block-title {
     margin-bottom: $column-gutter;
 
     ul.menu {
-        list-style: none;
+//        list-style: none;
     }
 
     ul.menu {
-        //        list-style-type: none;
+        ul{
+            list-style-type: none; 
+        }
+        list-style-type: none;
         margin: 0;
         padding: 0;
         border-right: #CCCCCC 1px dashed;
