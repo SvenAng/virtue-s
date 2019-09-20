@@ -10,7 +10,6 @@ body.cke_editable_themed {
 }
 
 .page {
-    //  background: $ghost;
     background: $white;
 }
 
@@ -18,7 +17,7 @@ body.cke_editable_themed {
 .b-header,
 main,
 #main-menu {
-    //  background: $white;
+
 
 }
 a:hover{
@@ -954,6 +953,11 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
         }
         .view-grouping-content{
             h3 {
+                strong{
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                
                 margin: 0 0 10px 0;
                 line-height: 1rem;
                 a{
@@ -970,14 +974,57 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
         color: $body-font-color;
         
     }
-   
     .views-row{
         margin: $column-gutter 0;
     }
     .views-row:hover{
         a{
             color: $primary-color; 
-//            transition: color 0.2s ease-in-out;
         }
     }
+}
+.date-combo{
+    .fieldset-description{
+        color: white;
+        padding: 0.5rem;
+                background: $virtue-button-report-color;
+        margin-bottom: 0.5rem;
+//        border: 1px dotted orange;
+    }
+}
+.form-item-field-startdatum-und-0-show-todate{
+    label{
+        font-size: 0.8rem;
+        color: gray;
+        font-style: italic;
+        
+    }
+    input[type="checkbox"]{
+        margin: 0;
+    }
+}
+.form-type-date-popup, .form-type-checkbox{
+    p{
+        margin: 0;    
+    }
+    
+}
+a.tabledrag-handle .handle {
+//    background: url(../../misc/draggable.png) no-repeat 6px 9px;
+    height: 34px;
+    width: 24px;
+}
+.view-bilder-i-rack{
+    .galleri{
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        .galleri-item{
+            padding-right: $column-gutter/2;
+        }
+    }
+}
+.field-name-field-featured-image{
+    padding-top: 1rem;
 }

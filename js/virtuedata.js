@@ -1,5 +1,36 @@
 /* Implement custom javascript here */
 jQuery(document).ready(function () {
+    //    Vilket språk i Drupal
+    var currentlang = jQuery('html').attr('lang');
+    jQuery( ".form-item-field-startdatum-und-0-value2 label" ).empty();
+    jQuery( ".form-item-field-startdatum-und-0-show-todate label" ).empty();
+    
+    if(currentlang == 'sv'){
+        jQuery('<p>Insert retrive date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrive date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
+    }else if(currentlang == 'en'){
+        jQuery("#edit-field-fynd-und-form-actions-ief-add-save--4").val('Save');
+        jQuery("#edit-field-fynd-und-form-actions-ief-add-save").val('Save');
+        
+        jQuery('<p>deploy date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrive date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
+    }else if(currentlang == 'ca'){
+        jQuery('<p>Deploy date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrive date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
+    }else if(currentlang == 'es'){
+        jQuery('<p>Deploy date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrive date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
+    }else if(currentlang == 'de'){
+        jQuery('<p>Deploy date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrive date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
+    }
+   // Hamburgare grjer 
+    
     jQuery(".c-hamburger").click(function () {
         jQuery('#mobil-navigation').toggleClass('open');
         jQuery('.c-hamburger').toggleClass('is-active');
