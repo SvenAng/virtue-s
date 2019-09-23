@@ -878,7 +878,7 @@ button#edit-field-fynd-und-actions-ief-add::before {
 
 
 button#edit-field-place-add-entityconnect-field-place-all-,
-button#edit-field-place-und-0-add-entityconnect-field-place-0- {
+button#edit-field-place-und-0-add-entityconnect-field-place-0-{
     padding: 0rem;
     font-size: 0rem;
     margin-top: 0.5rem;
@@ -896,7 +896,23 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
     color: $primary-color;
 
 }
-
+button#edit-field-fynd-und-form-actions-ief-add-save,
+button#edit-field-fynd-und-form-actions-ief-add-save--2{
+    font-size: 0rem;
+}
+button#edit-field-fynd-und-form-actions-ief-add-save::before,
+button#edit-field-fynd-und-form-actions-ief-add-save--2::before{
+//    padding: 0.5rem;
+    content: "OK ";
+    font-size: 1rem;
+//    font-weight: bold;
+    text-align: center;
+    color: $white;
+    
+}
+#edit-field-fynd-und-form span{
+    font-size:0px;
+}
 .button.active {
     background: $primary-color;
     color: white;
@@ -1027,4 +1043,7 @@ a.tabledrag-handle .handle {
 }
 .field-name-field-featured-image{
     padding-top: 1rem;
+}
+.views-exposed-widgets{
+    margin-bottom: 1.5rem;
 }
