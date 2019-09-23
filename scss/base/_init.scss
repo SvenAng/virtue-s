@@ -856,7 +856,12 @@ label {
     font-family: $font-family-sans-serif;
 }
 
-button#edit-field-fynd-und-actions-ief-add {
+button#edit-field-fynd-und-actions-ief-add,
+button#edit-field-fynd-und-actions-ief-add--2,
+button#edit-field-fynd-und-actions-ief-add--3,
+button#edit-field-fynd-und-actions-ief-add--4,
+button#edit-field-fynd-und-actions-ief-add--5,
+button#edit-field-fynd-und-actions-ief-add--6{
     padding: 0rem;
     font-size: 0rem;
     margin-top: 0.5rem;
@@ -864,7 +869,12 @@ button#edit-field-fynd-und-actions-ief-add {
     background: none;
 }
 
-button#edit-field-fynd-und-actions-ief-add::before {
+button#edit-field-fynd-und-actions-ief-add::before,
+button#edit-field-fynd-und-actions-ief-add--2::before,
+button#edit-field-fynd-und-actions-ief-add--3::before,
+button#edit-field-fynd-und-actions-ief-add--4::before,
+button#edit-field-fynd-und-actions-ief-add--5::before,
+button#edit-field-fynd-und-actions-ief-add--6::before{
     padding: 0.5rem;
     content: "+ ";
     font-size: 2rem;
@@ -897,11 +907,20 @@ button#edit-field-place-und-0-add-entityconnect-field-place-0-::before {
 
 }
 button#edit-field-fynd-und-form-actions-ief-add-save,
-button#edit-field-fynd-und-form-actions-ief-add-save--2{
+button#edit-field-fynd-und-form-actions-ief-add-save--2,
+button#edit-field-fynd-und-form-actions-ief-add-save--3,
+button#edit-field-fynd-und-entities-0-form-actions-ief-edit-save,
+button#edit-field-fynd-und-entities-1-form-actions-ief-edit-save.
+button#edit-field-fynd-und-entities-0-form-actions-ief-edit-save-2{
     font-size: 0rem;
 }
 button#edit-field-fynd-und-form-actions-ief-add-save::before,
-button#edit-field-fynd-und-form-actions-ief-add-save--2::before{
+button#edit-field-fynd-und-form-actions-ief-add-save--2::before,
+button#edit-field-fynd-und-form-actions-ief-add-save--3::before,
+button#edit-field-fynd-und-entities-0-form-actions-ief-edit-save::before,
+button#edit-field-fynd-und-entities-1-form-actions-ief-edit-save::before,
+button#edit-field-fynd-und-entities-0-form-actions-ief-edit-save--2::before,
+button#edit-field-fynd-und-entities-1-form-actions-ief-edit-save--2::before{
 //    padding: 0.5rem;
     content: "OK ";
     font-size: 1rem;
