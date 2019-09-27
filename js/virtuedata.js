@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
 //    jQuery('<p>hej spara då för fan</p>').appendTo('button#edit-field-fynd-und-form-actions-ief-add-save');
     
     if(currentlang == 'sv'){
-        jQuery('<p>Lägg till datum för upptagning, skall fyllas i när racket tas upp</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Lägg till datum för upptagning, måste fyllas i när man rapporterar dina observationer</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
         jQuery('<p>Datum för upptagning:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Datum för utplacering: <span class='form-required'>*</span></p></div>");
     }else if(currentlang == 'en'){
@@ -17,20 +17,20 @@ jQuery(document).ready(function () {
 //        jQuery("#edit-field-fynd-und-form-actions-ief-add-save").val('Save');
         // Försöker byta text på Create Node knappen
         
-        jQuery('<p>Retrieve date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
-        jQuery('<p>Deploy date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery('<p>Retrieve date, must be filled in when you report your observations</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrieve date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
     }else if(currentlang == 'ca'){
-        jQuery('<p>Retrieve date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
-        jQuery('<p>Deploy date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery('<p>Retrieve date, must be filled in when you report your observations</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrieve date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
     }else if(currentlang == 'es'){
-        jQuery('<p>Retrieve date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
-        jQuery('<p>Deploy date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery('<p>Retrieve date, must be filled in when you report your observations</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrieve date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
     }else if(currentlang == 'de'){
-        jQuery('<p>Retrieve date</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
-        jQuery('<p>Deploy date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
+        jQuery('<p>Retrieve date, must be filled in when you report your observations</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Retrieve date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
     }
    // Hamburgare grjer 
