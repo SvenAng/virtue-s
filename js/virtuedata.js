@@ -21,15 +21,15 @@ jQuery(document).ready(function () {
         jQuery('<p>Retrieve date:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Deploy date: <span class='form-required'>*</span></p></div>");
     }else if(currentlang == 'ca'){
-        jQuery('<p>Inserir la data de col·locació i retirada dels discos</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Inserir la data de recollida</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
         jQuery('<p>Data de recollida:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Data de col·locació: <span class='form-required'>*</span></p></div>");
     }else if(currentlang == 'es'){
-        jQuery('<p>Insertar la fecha de colocación y retirada de los discos</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Inserta la fecha de recogida</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
         jQuery('<p>Fecha de recogida:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Fecha de colocación: <span class='form-required'>*</span></p></div>");
     }else if(currentlang == 'de'){
-        jQuery('<p>Aussetz- und Einholdatum des Racks einsetzen</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
+        jQuery('<p>Einholdatum einsetzen</p>').appendTo('.form-item-field-startdatum-und-0-show-todate label');
         jQuery('<p>Einholdatum:</p>').appendTo('.form-item-field-startdatum-und-0-value2 label');
         jQuery(".form-item-field-startdatum-und-0-show-todate").append("<div><p>Aussetzdatum: <span class='form-required'>*</span></p></div>");
     }
