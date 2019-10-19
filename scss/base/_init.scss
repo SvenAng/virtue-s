@@ -1042,7 +1042,6 @@ button#edit-field-fynd-und-entities-1-form-actions-ief-edit-save--2::before{
     p{
         margin: 0;    
     }
-    
 }
 a.tabledrag-handle .handle {
 //    background: url(../../misc/draggable.png) no-repeat 6px 9px;
@@ -1065,4 +1064,38 @@ a.tabledrag-handle .handle {
 }
 .views-exposed-widgets{
     margin-bottom: 1.5rem;
+}
+
+//Popup rutan för undersökningen
+#popup-question-redirect{
+    background: rgba(0,0,0,0.5);
+}
+.modal-dialog{
+    width: inherit;
+    max-width: 400px;
+    margin-top: 50px;
+    .modal-content{
+    //    background: $gainsboro;
+        border-radius: 0;
+        .btn{
+            border-radius: 0;
+            margin: 10px 0;
+            display: block;
+        }
+        .button-yes{
+            background: $primary-color;
+            color: $white;
+            border: none;
+        }
+        .modal-header{
+            background: $primary-color;
+            padding: 3px;
+            h4{
+                color: $white;    
+            }
+        }
+        .modal-footer{
+            text-align: left;
+        }
+    }
 }
