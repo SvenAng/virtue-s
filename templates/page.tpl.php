@@ -30,7 +30,7 @@
                     global $sitemap_link;
                     if ( $current_lang =="sv") {
                             $active_sv = "active";
-                            $sitemap_link ="sv/svenskt-innehall";
+                            $sitemap_link ="/sv/svenskt-innehall";
                             $sitemap = "Sitemap";
                         }elseif ($current_lang =="en") {
                             $active_en = "active";
@@ -46,7 +46,7 @@
                             $sitemap = "Sitemap";
                         }elseif($current_lang =="es"){
                             $active_es = "active";
-                            $sitemap_link ="es/contenidoen-espanol";
+                            $sitemap_link ="/es/contenidoen-espanol";
                             $sitemap = "Sitemap";
                         }
 
