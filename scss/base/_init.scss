@@ -1067,35 +1067,55 @@ a.tabledrag-handle .handle {
 }
 
 //Popup rutan för undersökningen
-#popup-question-redirect{
-    background: rgba(0,0,0,0.5);
-}
-.modal-dialog{
-    width: inherit;
-    max-width: 400px;
-    margin-top: 50px;
-    .modal-content{
-    //    background: $gainsboro;
-        border-radius: 0;
-        .btn{
-            border-radius: 0;
-            margin: 10px 0;
-            display: block;
-        }
-        .button-yes{
-            background: $primary-color;
-            color: $white;
-            border: none;
-        }
-        .modal-header{
-            background: $primary-color;
-            padding: 3px;
-            h4{
-                color: $white;    
-            }
-        }
-        .modal-footer{
-            text-align: left;
-        }
+#popup-announcement-wrap{
+    border-radius: 0;
+    a{
+        padding: 5px 10px;
+        border: 1px solid $primary-color;
+    }
+    a:hover{
+        background: $primary-color;
+        color: white;
+    }
+    #popup-announcement{
+        padding: 1rem;
+    }
+    #popup-announcement-close{
+        width: 70px;
+        background-position: right top;
+        background-repeat: no-repeat;
+        line-height: 1.7rem;
     }
 }
+//#popup-question-redirect{
+//    background: rgba(0,0,0,0.5);
+//}
+//.modal-dialog{
+//    width: inherit;
+//    max-width: 400px;
+//    margin-top: 50px;
+//    .modal-content{
+//    //    background: $gainsboro;
+//        border-radius: 0;
+//        .btn{
+//            border-radius: 0;
+//            margin: 10px 0;
+//            display: block;
+//        }
+//        .button-yes{
+//            background: $primary-color;
+//            color: $white;
+//            border: none;
+//        }
+//        .modal-header{
+//            background: $primary-color;
+//            padding: 3px;
+//            h4{
+//                color: $white;    
+//            }
+//        }
+//        .modal-footer{
+//            text-align: left;
+//        }
+//    }
+//}
