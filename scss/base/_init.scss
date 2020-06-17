@@ -1068,17 +1068,32 @@ a.tabledrag-handle .handle {
 
 //Popup rutan för undersökningen
 #popup-announcement-wrap{
-    border-radius: 0;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+//    background: #b5dff8;
+    background-image: radial-gradient( #d6f7ff , #7fe4fc );
+    h5{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
     a{
         padding: 5px 10px;
-        border: 1px solid $primary-color;
+//        border: 2px solid orange;
+        color: black;
+        background: orange;
+       
     }
     a:hover{
-        background: $primary-color;
-        color: white;
+        background: white;
+        color: black;
+    }
+    p{
+        margin-top: 1rem;
     }
     #popup-announcement{
-        padding: 1rem;
+        padding: 80px 60px 40px 60px;
     }
     #popup-announcement-close{
         width: 70px;
@@ -1087,6 +1102,27 @@ a.tabledrag-handle .handle {
         line-height: 1.7rem;
     }
 }
+
+//Webform
+.webform-component-fieldset{
+    .webform-component-radios,
+    .webform-component-textfield{
+        label{
+            font-weight: 600;    
+        }
+        .option{
+            font-weight: 400;
+        }
+    }
+    legend{
+        font-size: 1rem;
+        font-weight: 700; 
+    }
+}
+
+
+
+////////
 //#popup-question-redirect{
 //    background: rgba(0,0,0,0.5);
 //}
