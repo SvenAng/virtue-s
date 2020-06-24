@@ -22,3 +22,13 @@
     color: #111;
     margin-left: 10px;
 }
+.evaluation-block{
+    background: #ff8519;
+    padding: 1rem;
+    
+    
+}
+.evaluation-block a, .evaluation-block h5, .evaluation-block h6{
+    color: white;
+    
+}
