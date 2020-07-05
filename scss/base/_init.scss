@@ -1120,8 +1120,55 @@ a.tabledrag-handle .handle {
     }
 }
 
-
-
+//Book pages
+.node-type-book{
+    .field-name-field-pdf, .book-navigation, .field-name-field-youtube{
+        padding-bottom: $column-gutter; // funkar
+        iframe{
+            padding-bottom: $column-gutter; 
+        }
+    }
+    //
+    .main{
+        .menu-block-wrapper{
+            ul li a{
+                font-weight: 600;  
+            }
+            ul ul > li > a{
+                font-weight: 400;
+            }
+            ul.menu{
+                border: none;
+                span{
+                    font-style: italic;
+                    margin: 7px 10px 8px 25px;
+                    line-height: 30px;
+                    color: $tuatara;
+                }
+                
+            }
+            ul{
+                margin: 0;
+            }
+            li{
+                padding-left: 0;
+                a{
+                    background: $smoke;
+                    border: 1px solid $gainsboro;
+                    padding-left: 2rem;
+                }
+            }
+            li a::before{
+                padding-left: .5rem;
+            }
+        }
+    }
+}
+.sidebar-first{
+    section{
+        padding-bottom: $column-gutter;
+    }
+}
 ////////
 //#popup-question-redirect{
 //    background: rgba(0,0,0,0.5);
