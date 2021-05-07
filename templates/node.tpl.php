@@ -91,7 +91,7 @@
       <?php 
         //print $submitted;
         if ($submitted) {
-          print date("Y-m-d",$node->created);
+          print t("updated") .": ". date("Y-m-d",   $node->changed);
         }  
       ?>
     </div>

@@ -20,6 +20,7 @@ function virtuedata_preprocess_page(&$variables) {
  * Implements template_preprocess_node.
  */
 function virtuedata_preprocess_node(&$variables) {
+    $variables['date'] = format_date($variables['node']->changed);
 }
 /**
  * Implements theme_menu_link().
